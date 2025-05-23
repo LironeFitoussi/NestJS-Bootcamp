@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "pdmvg43gta"
+    },
+    {
+      "email": "john@doe.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "password": "DoeDiDo",
+      "id": "xr12fgh2m1c"
+    },
+    {
+      "email": "john@doe.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "password": "DoeDiDo",
+      "id": "2cjgeokj5y"
+    },
+    {
+      "email": "john@doe.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "password": "DoeDiDo",
+      "id": "upwz70g4q2"
+    }
+  ]
+}
