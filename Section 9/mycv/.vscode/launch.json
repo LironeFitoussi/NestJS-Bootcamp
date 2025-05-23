@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://localhots:3000",
+            "request": "launch",
+            "url": "http://localhots:3000"
+        }
+    ]
+}
