@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { User } from './user.entity';
-
+import { NotFoundError } from 'rxjs';
 @Injectable()
 export class UsersService {
   constructor(@InjectRepository(User) private repo: Repository<User>) {}
@@ -13,6 +13,9 @@ export class UsersService {
   }
 
   findOne(id: number) {
+    if (!id) {
+      throw null
+    }
     return this.repo.findOneBy({ id });
   }
 

@@ -21,6 +21,10 @@ export class TransformInterceptor implements NestInterceptor {
     intercept(context: ExecutionContext, handler: CallHandler): Observable<ResponseFormat<any>> {
         return handler.handle().pipe(
             map((response: any) => {
+
+                console.log(response);
+                console.log(typeof response);
+                
                 // If response is already in the correct format, return it
                 if (response && 'status' in response && 'message' in response && 'data' in response) {
                     return response;
@@ -42,6 +46,13 @@ export class TransformInterceptor implements NestInterceptor {
                         message: response.message,
                         data: response.user || response.data || null,
                     };
+                }
+
+                // if response is a plain object
+                if (typeof response === 'object') {
+                    return {
+                        message: response.message
+                    }
                 }
 
                 // Default case: treat the entire response as data

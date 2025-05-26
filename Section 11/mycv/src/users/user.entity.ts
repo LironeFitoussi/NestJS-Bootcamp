@@ -6,6 +6,7 @@ import {
   Column,
   PrimaryGeneratedColumn,
 } from 'typeorm';
+// DONE:
 
 @Entity()
 export class User {

@@ -1,5 +1,14 @@
-### Create a new user
+### Signup User
 POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "asdf@momo.com",
+  "password": "asdlfkajsd"
+}
+
+### Login User
+POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
