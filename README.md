@@ -4,11 +4,75 @@ This repository contains the code and resources for a comprehensive NestJS Bootc
 
 ## 🚀 Repository Structure
 
-- **Section 1**: Introduction to NestJS and basic concepts
-- **Section 2**: Core concepts and fundamentals
-- **Section 3-5**: Advanced topics and practical applications
-- **Section 6**: Advanced features and best practices
-- **Resources**: Additional learning materials and references
+The bootcamp is organized into the following sections, each containing practical projects:
+
+### Section 2: Core Concepts
+- **scratch/** - Basic NestJS setup and core concepts
+  - Basic controller and service implementation
+  - Module organization
+
+### Section 3-5: Advanced Topics
+- **messages/** - Messaging system implementation
+  - Message handling and routing
+  - Basic service communication
+
+### Section 6: Dependency Injection
+- **di/** - Computer System with DI
+  - `/src/computer` - Computer controller and module
+  - `/src/cpu` - CPU component implementation
+  - `/src/disk` - Disk storage implementation
+  - `/src/power` - Power management system
+  - Demonstrates NestJS dependency injection patterns
+
+### Section 7: Car Management System
+- **cars/** - Complete car management application
+  - `/src/auth` - Authentication system
+    - DTOs for request validation
+    - Auth controller and service
+    - Repository pattern implementation
+  - `/src/reports` - Reporting functionality
+  - `/src/types` - TypeScript interfaces and types
+  - Full authentication and authorization
+
+### Section 8: CV Reports System
+- **cvreports/** - CV reporting application
+  - `/src/auth` - Authentication system
+  - `/src/reports` - CV report generation
+  - `/src/types` - Type definitions
+  - Enhanced reporting features
+
+### Sections 9-13: CV Management System
+Progressive development of a complete CV management system:
+
+#### Section 9: Basic Implementation
+- **mycv/** - Initial CV system
+  - `/src/users` - User management
+  - `/src/reports` - Basic reporting
+  - Core functionality implementation
+
+#### Section 10: Authentication
+- **mycv/** - Added security features
+  - Enhanced user authentication
+  - Role-based access control
+  - Security middleware
+
+#### Section 11: Performance
+- **mycv/** - Performance optimizations
+  - Caching implementation
+  - Query optimization
+  - Response compression
+
+#### Section 12: Deployment
+- **mycv/** - Deployment configuration
+  - Environment configuration
+  - Production settings
+  - Deployment scripts
+
+#### Section 13: Complete System
+- **mycv/** - Final implementation
+  - All features integrated
+  - Production-ready code
+  - Best practices implemented
 
 ## 🛠️ Prerequisites
 
@@ -29,24 +93,73 @@ git clone [your-repository-url]
 cd nestjs-bootcamp
 ```
 
-3. Install dependencies for each section as needed:
+3. Install dependencies for each project:
 ```bash
+cd [section-folder]/[project-folder]
 npm install
 ```
 
 ## 🏗️ Project Structure
 
-Each section contains its own set of examples and exercises. Navigate to the specific section you're interested in to find detailed instructions and code examples.
+Each project follows NestJS best practices with:
+- Modular architecture
+- Dependency injection
+- TypeScript interfaces and DTOs
+- Unit and e2e tests
+- Environment configuration
+
+### Key Features by Section
+
+1. **Section 2**: Basic NestJS concepts
+   - Controllers and services
+   - Module organization
+   - Basic routing
+
+2. **Sections 3-5**: Advanced concepts
+   - Message handling
+   - Service communication
+   - Basic patterns
+
+3. **Section 6**: Dependency Injection
+   - Component-based architecture
+   - Service injection
+   - Module organization
+
+4. **Section 7**: Car Management
+   - Authentication system
+   - Reporting features
+   - Type safety
+
+5. **Section 8**: CV Reports
+   - Enhanced authentication
+   - Report generation
+   - Type definitions
+
+6. **Sections 9-13**: CV System
+   - Progressive feature addition
+   - Security implementation
+   - Performance optimization
+   - Deployment configuration
+   - Production readiness
 
 ## 📚 Learning Path
 
-1. Start with Section 1 to understand the basics of NestJS
-2. Progress through Sections 2-5 to learn core concepts and practical applications
-3. Complete Section 6 to master advanced features and best practices
+1. Start with Section 2 to understand basic NestJS concepts
+2. Progress through Sections 3-5 to learn advanced patterns
+3. Study Dependency Injection in Section 6
+4. Build the Car Management System in Section 7
+5. Create the CV Reports System in Section 8
+6. Progress through Sections 9-13 to build a complete CV Management System
 
 ## 🔧 Environment Setup
 
-Create a `.env` file in the root directory of each section project (if required) and configure your environment variables.
+Each project requires specific environment variables. Create a `.env` file in each project's root directory and configure:
+- Database connections
+- Authentication secrets
+- API keys
+- Environment-specific settings
+
+Check each project's README.md for specific setup instructions.
 
 ## 🤝 Contributing
 
