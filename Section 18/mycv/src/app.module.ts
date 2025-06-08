@@ -18,17 +18,7 @@ const cookieSession = require('cookie-session');
       envFilePath: `.env.${process.env.NODE_ENV}`
     }),
     UsersModule,
-    TypeOrmModule.forRootAsync({
-      inject: [ConfigService],
-      useFactory(config: ConfigService) {
-        return {
-          type: 'sqlite',
-          database: config.get<string>('DB_NAME'),
-          synchronize: true,
-          entities: [User, Report] 
-        }
-      },
-    }),
+    TypeOrmModule.forRoot(),
     ReportsModule,
   ],
   controllers: [AppController],
